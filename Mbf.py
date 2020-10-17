@@ -54,7 +54,7 @@ def masuk():
     else:
         print('\033[00mCookies \033[91mInvalid\033[00m')
         time.sleep(1)
-        os.system('python MBF.py')
+        os.system('python Mbf.py')
 def nid():
     r=ses.get(mbasic.format('/me'),cookies=kukis).text
     name=re.findall(r'<title>(.*?)</title>',r)[0]
