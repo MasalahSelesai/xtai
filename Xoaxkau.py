@@ -291,7 +291,7 @@ def mbf():
                            print("\033[94m===========================================\033[00m")
                            print("\n\033[00m[\033[92m✓\033[00m] Done")
                            print("\033[00m[\033[91m!\033[00m] no result")
-               except (Ke,,yboardInterrupt,EOFError):
+               except (KeyboardInterrupt,EOFError):
                        exit()
                except requests.exceptions.ConnectionError:
                        exit("\033[00m[\033[91m!\033[00m] Connection error")
